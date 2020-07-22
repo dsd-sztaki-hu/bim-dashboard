@@ -1,0 +1,70 @@
+2020-07-20 11:39:26,863 INFO [main] o.b.BimServer [BimServer.java:248] Starting BIMserver (Windows 10, 1.8.0_241, 64bit, Xmx: 3,56 GB)
+2020-07-20 11:39:31,455 INFO [main] o.b.BimServer [BimServer.java:336] Version: 1.5.183-SNAPSHOT
+2020-07-20 11:39:31,455 INFO [main] o.b.BimServer [BimServer.java:345] Using "C:\Users\Patrickito\Documents\Munka\home" as homedir
+2020-07-20 11:39:34,256 INFO [pool-2-thread-1] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing IFC2X3TC1 with ifc2x3tc1
+2020-07-20 11:39:34,256 INFO [pool-2-thread-3] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing GEOMETRY with geometry
+2020-07-20 11:39:34,256 INFO [pool-2-thread-4] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing STORE with store
+2020-07-20 11:39:34,256 INFO [pool-2-thread-5] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing LOG with log
+2020-07-20 11:39:34,256 INFO [pool-2-thread-2] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing IFC4 with ifc4
+2020-07-20 11:39:35,872 INFO [main] o.b.d.b.BerkeleyKeyValueStore [BerkeleyKeyValueStore.java:98] No database directory found, creating "C:\Users\Patrickito\Documents\Munka\home\database"
+2020-07-20 11:39:35,874 INFO [main] o.b.d.b.BerkeleyKeyValueStore [BerkeleyKeyValueStore.java:101] Successfully created database dir "C:\Users\Patrickito\Documents\Munka\home\database"
+2020-07-20 11:42:58,877 INFO [main] o.b.d.b.BerkeleyKeyValueStore [BerkeleyKeyValueStore.java:87] Non-empty database directory found "C:\Users\Patrickito\Documents\Munka\home\database"
+2020-07-20 11:42:59,621 INFO [main] o.b.BimServer [BimServer.java:813] Checking for stale records, this can take some time...
+2020-07-20 11:42:59,670 INFO [main] o.b.BimServer [BimServer.java:843] Done checking for stale records (48 ms)
+2020-07-20 11:43:00,148 INFO [main] o.b.ServerInfoManager [ServerInfoManager.java:116] Changing server state to NOT_SETUP
+2020-07-20 11:43:00,148 INFO [main] o.b.BimServer [BimServer.java:1113] Initializing database dependant logic...
+2020-07-20 11:43:00,352 INFO [main] o.b.BimServer [BimServer.java:1284] Done initializing database dependant logic (204ms)
+2020-07-20 11:43:02,232 INFO [main] o.i.IfcOpenShellEnginePlugin [IfcOpenShellEnginePlugin.java:101] Using overruled system setting for commit sha
+2020-07-20 11:43:02,244 INFO [main] o.i.IfcGeomServerClient [IfcGeomServerClient.java:186] Downloading from https://s3.amazonaws.com/ifcopenshell-builds/IfcGeomServer-v0.6.0-b4ce5be-win64.zip
+2020-07-20 11:43:02,245 INFO [main] o.i.IfcGeomServerClient [IfcGeomServerClient.java:188] Unzipping to C:\Users\Patrickito\Documents\Munka\home\tmp\org.opensourcebim.ifcopenshellplugin\IfcGeomServer-v0.6.0-b4ce5be-win64.exe
+2020-07-20 11:43:03,184 INFO [main] o.i.IfcGeomServerClient [IfcGeomServerClient.java:195] IfcOpenShell Last Modified: Fri, 05 Jul 2019 03:01:37 GMT
+2020-07-20 11:43:04,745 INFO [main] o.i.IfcOpenShellEnginePlugin [IfcOpenShellEnginePlugin.java:109] Using C:\Users\Patrickito\Documents\Munka\home\tmp\org.opensourcebim.ifcopenshellplugin\IfcGeomServer-v0.6.0-b4ce5be-win64.exe
+2020-07-20 11:43:04,747 INFO [main] o.b.BimServer [BimServer.java:1015] Setting default render engine for user system to IfcOpenShell
+2020-07-20 11:43:08,209 INFO [main] o.b.BimServer [BimServer.java:1015] Setting default render engine for user admin@bimserver.org to IfcOpenShell
+2020-07-20 11:43:08,388 INFO [main] o.b.ServerInfoManager [ServerInfoManager.java:116] Changing server state to RUNNING
+2020-07-20 11:44:12,610 INFO [pool-1-thread-1] o.b.r.p.CommonsRenderEnginePool [CommonsRenderEnginePool.java:37] Pool size: 7
+2020-07-20 11:45:01,917 INFO [pool-1-thread-1] o.b.g.StreamingGeometryGenerator [StreamingGeometryGenerator.java:655] Rendertime: 50.063s, Reused (by hash): 3,20 MB, Reused (by transformation): 0 B, Reused (by mapping): 0 B, Total: 5,87 MB, Final: 2,67 MB
+2020-07-20 11:45:01,919 ERROR [pool-1-thread-1] o.b.g.StreamingGeometryGenerator [StreamingGeometryGenerator.java:657] [IFC4_GRAPHISOFT_ARCHICAD_Sample_Project_S_Office_v1.ifc] Number of erroneous files: 85
+2020-07-20 11:47:59,066 INFO [pool-1-thread-3] o.b.r.p.CommonsRenderEnginePool [CommonsRenderEnginePool.java:37] Pool size: 7
+2020-07-20 11:48:54,324 INFO [GeometryRunner] o.b.d.b.BerkeleyKeyValueStore [BerkeleyKeyValueStore.java:615] writes: 1000000, 161 ms sync
+2020-07-20 11:50:38,100 INFO [pool-1-thread-3] o.b.g.StreamingGeometryGenerator [StreamingGeometryGenerator.java:655] Rendertime: 02m 39s, Reused (by hash): 182,74 MB, Reused (by transformation): 0 B, Reused (by mapping): 1,55 MB, Total: 219,52 MB, Final: 35,24 MB
+2020-07-20 11:50:38,101 ERROR [pool-1-thread-3] o.b.g.StreamingGeometryGenerator [StreamingGeometryGenerator.java:657] [IFC2x3_GRAPHISOFT_ARCHICAD_Sample_Project_S_Office_v1.ifc] Number of erroneous files: 14
+2020-07-20 12:55:13,631 INFO [pool-1-thread-14] o.b.g.StreamingGeometryGenerator [StreamingGeometryGenerator.java:655] Rendertime: 18.818s, Reused (by hash): 234,52 KB, Reused (by transformation): 0 B, Reused (by mapping): 0 B, Total: 2,62 MB, Final: 2,39 MB
+2020-07-20 12:55:13,755 WARN [pool-1-thread-14] o.b.g.StreamingGeometryGenerator [StreamingGeometryGenerator.java:661] [AC20-FZK-Haus.ifc] Number of representations skipped:
+2020-07-20 12:55:13,755 WARN [pool-1-thread-14] o.b.g.StreamingGeometryGenerator [StreamingGeometryGenerator.java:663] 	FootPrint: 7
+2020-07-21 11:25:03,641 INFO [main] o.b.BimServer [BimServer.java:248] Starting BIMserver (Windows 10, 1.8.0_241, 64bit, Xmx: 3,56 GB)
+2020-07-21 11:25:08,930 INFO [main] o.b.BimServer [BimServer.java:336] Version: 1.5.183-SNAPSHOT
+2020-07-21 11:25:08,930 INFO [main] o.b.BimServer [BimServer.java:345] Using "C:\Users\Patrickito\Documents\Munka\home" as homedir
+2020-07-21 11:25:33,026 INFO [pool-2-thread-2] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing IFC4 with ifc4
+2020-07-21 11:25:33,026 INFO [pool-2-thread-3] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing GEOMETRY with geometry
+2020-07-21 11:25:33,026 INFO [pool-2-thread-4] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing STORE with store
+2020-07-21 11:25:33,026 INFO [pool-2-thread-1] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing IFC2X3TC1 with ifc2x3tc1
+2020-07-21 11:25:33,026 INFO [pool-2-thread-5] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing LOG with log
+2020-07-21 11:25:35,089 INFO [main] o.b.d.b.BerkeleyKeyValueStore [BerkeleyKeyValueStore.java:87] Non-empty database directory found "C:\Users\Patrickito\Documents\Munka\home\database"
+2020-07-21 11:25:43,914 INFO [main] o.b.BimServer [BimServer.java:813] Checking for stale records, this can take some time...
+2020-07-21 11:25:44,385 INFO [main] o.b.BimServer [BimServer.java:843] Done checking for stale records (470 ms)
+2020-07-21 11:25:46,373 INFO [main] o.b.ServerInfoManager [ServerInfoManager.java:116] Changing server state to RUNNING
+2020-07-21 11:25:46,374 INFO [main] o.b.BimServer [BimServer.java:1113] Initializing database dependant logic...
+2020-07-21 11:25:46,905 INFO [main] o.b.BimServer [BimServer.java:1284] Done initializing database dependant logic (530ms)
+2020-07-21 11:25:50,019 INFO [main] o.b.LocalDevBimServerStarter [AbstractLocalDevBimServerStarter.java:102] Loading plugins...
+2020-07-21 11:25:50,952 INFO [main] o.i.IfcOpenShellEnginePlugin [IfcOpenShellEnginePlugin.java:101] Using overruled system setting for commit sha
+2020-07-21 11:25:53,420 INFO [main] o.i.IfcOpenShellEnginePlugin [IfcOpenShellEnginePlugin.java:109] Using C:\Users\Patrickito\Documents\Munka\home\tmp\org.opensourcebim.ifcopenshellplugin\IfcGeomServer-v0.6.0-b4ce5be-win64.exe
+2020-07-21 11:25:57,533 INFO [main] o.b.LocalDevBimServerStarter [AbstractLocalDevBimServerStarter.java:106] All plugins loaded (7514 ms)
+2020-07-22 13:17:31,563 INFO [main] o.b.BimServer [BimServer.java:248] Starting BIMserver (Windows 10, 1.8.0_241, 64bit, Xmx: 3,56 GB)
+2020-07-22 13:17:36,880 INFO [main] o.b.BimServer [BimServer.java:336] Version: 1.5.183-SNAPSHOT
+2020-07-22 13:17:36,880 INFO [main] o.b.BimServer [BimServer.java:345] Using "C:\Users\Patrickito\Documents\Munka\home" as homedir
+2020-07-22 13:17:55,691 INFO [pool-2-thread-5] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing LOG with log
+2020-07-22 13:17:55,691 INFO [pool-2-thread-4] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing STORE with store
+2020-07-22 13:17:55,691 INFO [pool-2-thread-3] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing GEOMETRY with geometry
+2020-07-22 13:17:55,691 INFO [pool-2-thread-1] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing IFC2X3TC1 with ifc2x3tc1
+2020-07-22 13:17:55,691 INFO [pool-2-thread-2] o.b.e.PackageMetaData [PackageMetaData.java:77] Initializing IFC4 with ifc4
+2020-07-22 13:17:57,654 INFO [main] o.b.d.b.BerkeleyKeyValueStore [BerkeleyKeyValueStore.java:87] Non-empty database directory found "C:\Users\Patrickito\Documents\Munka\home\database"
+2020-07-22 13:18:05,833 INFO [main] o.b.BimServer [BimServer.java:813] Checking for stale records, this can take some time...
+2020-07-22 13:18:06,315 INFO [main] o.b.BimServer [BimServer.java:843] Done checking for stale records (481 ms)
+2020-07-22 13:18:08,098 INFO [main] o.b.ServerInfoManager [ServerInfoManager.java:116] Changing server state to RUNNING
+2020-07-22 13:18:08,098 INFO [main] o.b.BimServer [BimServer.java:1113] Initializing database dependant logic...
+2020-07-22 13:18:08,526 INFO [main] o.b.BimServer [BimServer.java:1284] Done initializing database dependant logic (428ms)
+2020-07-22 13:18:11,036 INFO [main] o.b.LocalDevBimServerStarter [AbstractLocalDevBimServerStarter.java:102] Loading plugins...
+2020-07-22 13:18:11,854 INFO [main] o.i.IfcOpenShellEnginePlugin [IfcOpenShellEnginePlugin.java:101] Using overruled system setting for commit sha
+2020-07-22 13:18:12,570 INFO [main] o.i.IfcOpenShellEnginePlugin [IfcOpenShellEnginePlugin.java:109] Using C:\Users\Patrickito\Documents\Munka\home\tmp\org.opensourcebim.ifcopenshellplugin\IfcGeomServer-v0.6.0-b4ce5be-win64.exe
+2020-07-22 13:18:15,667 INFO [main] o.b.LocalDevBimServerStarter [AbstractLocalDevBimServerStarter.java:106] All plugins loaded (4630 ms)
