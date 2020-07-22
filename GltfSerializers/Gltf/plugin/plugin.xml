@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginDescriptor>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.serializers.SerializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.gltf.BinaryGltfSerializerPlugin</implementationClass>
+		<description>Serializer to binary glTF</description>
+		<name>Binary glTF Serializer</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.serializers.SerializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.gltf.BinaryGltfSerializerPlugin2</implementationClass>
+		<description>Serializer to binary glTF 2</description>
+		<name>Binary glTF Serializer 2</name>
+	</JavaPlugin>
+</PluginDescriptor>
