@@ -224,11 +224,11 @@ function ThreeDView(containerDiv, parent, main) {
 						} else {
 							var material = BIMSURFER.Constants.materials[object.getType()];
 							// Hack to get the roof to be red.....
-							if (object.getType() == "IfcSlab") {
-								if (object.getPredefinedType() == "ROOF") {
-									material = BIMSURFER.Constants.materials["IfcRoof"];
-								}
-							}
+							// if (object.getType() == "IfcSlab") {
+							// 	if (object.getPredefinedType() == "ROOF") {
+							// 		material = BIMSURFER.Constants.materials["IfcRoof"];
+							// 	}
+							// }
 							if (material == null) {
 								material = BIMSURFER.Constants.materials.DEFAULT;
 							}
@@ -240,6 +240,16 @@ function ThreeDView(containerDiv, parent, main) {
 				} else if (mode == 1) {
 					threeDObject.findParentByType("enable").setEnabled(true);
 					var color = {};
+					//test id-s
+					// if(object.object.GlobalId == "1gCdl7HwX1XRM5xqvU8bzn" || object.object.GlobalId == "0MTV$tTEmuHRmRgM3NqD12" || object.object.GlobalId == "2nUN4hocDCXfsUeKfiSEzc"){
+					// 	color.a = 1;
+					// 	color.r = 1;
+					// 	color.g = 0;
+					// 	color.b = 0;
+					// }
+					// else{
+						
+					// }
 					color.a = 0.5;
 					color.r = 0.5;
 					color.g = 0.5;

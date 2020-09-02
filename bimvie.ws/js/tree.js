@@ -37,11 +37,12 @@ function Tree(selector) {
 
 function Node() {};
 
-Node.prototype.init = function(id, title, object){
+Node.prototype.init = function(id, title, object, percentage){
 	this.isOpen = false;
 	this.id = id;
 	this.title = title;
 	this.object = object;
+	this.percentage = percentage;
 };
 
 Node.prototype.linkClick = function(){
@@ -140,14 +141,33 @@ Node.prototype.createDom = function(){
 		this.img.click(this.toggle.bind(this));
 		this.li.append(this.img);
 		this.icon = $("<div class=\"treepreicon\">");
+
+		if(this.percentage != null){
+			this.div2 = $("<div class=\"percentage\">" + this.percentage + "</div>");
+		}
+		else{
+			this.div2 = $("<div class=\"percentage\"></div>");
+		}
+
+		
+
 		this.li.append(this.icon);
 		this.div.append(this.a);
+		this.div2.append(this.span);
 		this.li.append(this.div);
+		this.li.append(this.div2);
+
+
 		this.ul = $("<ul>");
 		this.ul.hide();
 		this.li.append(this.ul);
 		this.a.click(this.linkClick.bind(this));
 		
+		
+		if(this.errorTooltip != null){
+			this.div2.attr("title", this.errorTooltip);
+		}
+
 		if (this.hint != null) {
 			this.a.attr("title", this.hint);
 		}
@@ -304,6 +324,14 @@ Node.prototype.hint = function(hint) {
 
 Node.prototype.setTitle = function(title){
 	this.a.html(title);
+};
+
+Node.prototype.setPercentage = function(percentage, errorTooltip){
+	this.percentage = percentage;
+	this.errorTooltip = errorTooltip
+	if (this.li != null) {
+		this.div2.text(this.percentage);
+	}
 };
 
 Node.prototype.hide = function(){

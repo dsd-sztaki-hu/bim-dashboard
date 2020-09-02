@@ -368,6 +368,19 @@ function Main(address, user) {
 			div.find(".modal").modal("show");
 		});
 	};
+
+	this.showLoadCVSPopup = function(project, callback) {
+		var div = $("<div>");
+		$(document.body).append(div);
+		div.load(Global.baseDir + "loadcvs.html", function(){
+			new LoadCVS($(this), project, function(){
+				if (callback != null) {
+					callback();
+				}
+			});
+			div.find(".modal").modal("show");
+		});
+	};
 	
 	this.showDownloadCheckoutPopup = function(poid, roid) {
 		var div = $("<div>");
